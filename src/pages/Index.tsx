@@ -33,12 +33,12 @@ const Index = () => {
 
   const projects = [
     {
-      title: "Smart Home Automation System",
-      description: "IoT-based home automation using ESP32 and Arduino, controlling lights, fans, and security systems remotely.",
-      tech: ["ESP32", "Arduino", "IoT", "Mobile App"],
+      title: "Quantum Resistance Online Voting System",
+      description: "A quantum-resistant Based online voting system  [QR_BVS]is a cryptographically secure electronic voting platform that leverages post-quantum algorithms.",
+      tech: ["Python", "Post-Quantum Cryptography", "lattice-based schemes", "Web App"],
       status: "Completed"
     },
-    {
+ /*{
       title: "Digital Signal Processing Lab", 
       description: "Implementation of various DSP algorithms including FFT, filters, and signal analysis using MATLAB and embedded systems.",
       tech: ["MATLAB", "DSP", "Signal Processing", "Embedded C"],
@@ -49,16 +49,19 @@ const Index = () => {
       description: "Automated attendance tracking system using RFID technology with real-time database management.",
       tech: ["RFID", "Arduino", "Database", "C++"],
       status: "Completed"
-    }
+    } */
   ];
 
   const skills = [
-    { name: "Embedded Systems", level: 85, icon: Cpu },
-    { name: "Arduino/ESP32", level: 90, icon: Code },
-    { name: "Circuit Design", level: 80, icon: Zap },
+    { name: "Embedded Systems to Beginner", level: 70, icon: Cpu },
     { name: "C/C++", level: 85, icon: Code },
-    { name: "MATLAB", level: 75, icon: Code },
-    { name: "Digital Signal Processing", level: 70, icon: Zap }
+    { name: "Java", level: 85, icon: Code },
+    { name: "Python", level: 80, icon: Code },
+    { name: "Html/Css", level: 75, icon: Code },
+    { name: "Arduino/ESP32", level: "progresseing", icon: Code },
+    { name: "Circuit Design", level: "progresseing", icon: Zap },
+    { name: "MATLAB", level: "progressing", icon: Code },
+    { name: "Digital Signal Processing", level: "progressing", icon: Zap }
   ];
 
   return (
@@ -307,7 +310,7 @@ const Index = () => {
                 <p className="text-gray-300 relative z-10">mysteryak27@gmail.com</p>
               </a>
               
-              <a href="https://github.com/anandhmsak" target="_blank" rel="noopener noreferrer" className="contact-card p-6 text-center group">
+              <a href="https://github.com/anandmsak" target="_blank" rel="noopener noreferrer" className="contact-card p-6 text-center group">
                 <Github className="mx-auto mb-4 text-electric-teal icon-hover" size={32} />
                 <h3 className="text-lg font-semibold text-white mb-2 relative z-10">GitHub</h3>
                 <p className="text-gray-300 relative z-10">@anandhmsak</p>
@@ -337,7 +340,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="glass-card p-6 text-center">
             <p className="text-gray-300 relative z-10">
-              © 2024 Anandha Krishnan P. Built with passion for electronics and embedded systems.
+              © 2025 Anandha Krishnan P. Built with passion for electronics and embedded systems.
             </p>
           </div>
         </div>

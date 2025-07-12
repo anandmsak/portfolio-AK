@@ -1,6 +1,18 @@
-
 import { useEffect, useState } from 'react';
-import { Mail, MapPin, Phone, Github, Linkedin, ExternalLink, Code, Cpu, Zap, ChevronDown, Menu, X } from 'lucide-react';
+import {
+  Mail,
+  MapPin,
+  Phone,
+  Github,
+  Linkedin,
+  ExternalLink,
+  Code,
+  Cpu,
+  Zap,
+  ChevronDown,
+  Menu,
+  X,
+} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
@@ -9,7 +21,7 @@ const Index = () => {
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
+      rootMargin: '0px 0px -50px 0px',
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -33,12 +45,13 @@ const Index = () => {
 
   const projects = [
     {
-      title: "Quantum Resistance Online Voting System",
-      description: "A quantum-resistant Based online voting system  [QR_BVS]is a cryptographically secure electronic voting platform that leverages post-quantum algorithms.",
-      tech: ["Python", "Post-Quantum Cryptography", "lattice-based schemes", "Web App"],
-      status: "Completed"
+      title: 'Quantum Resistance Online Voting System',
+      description:
+        'A quantum-resistant Based online voting system  [QR_BVS]is a cryptographically secure electronic voting platform that leverages post-quantum algorithms.',
+      tech: ['Python', 'Post-Quantum Cryptography', 'lattice-based schemes', 'Web App'],
+      status: 'Completed',
     },
- /*{
+    /*{
       title: "Digital Signal Processing Lab", 
       description: "Implementation of various DSP algorithms including FFT, filters, and signal analysis using MATLAB and embedded systems.",
       tech: ["MATLAB", "DSP", "Signal Processing", "Embedded C"],
@@ -53,15 +66,15 @@ const Index = () => {
   ];
 
   const skills = [
-    { name: "Embedded Systems to Beginner", level: 70, icon: Cpu },
-    { name: "C/C++", level: 85, icon: Code },
-    { name: "Java", level: 85, icon: Code },
-    { name: "Python", level: 80, icon: Code },
-    { name: "Html/Css", level: 75, icon: Code },
-    { name: "Arduino/ESP32", level: "progresseing", icon: Code },
-    { name: "Circuit Design", level: "progresseing", icon: Zap },
-    { name: "MATLAB", level: "progressing", icon: Code },
-    { name: "Digital Signal Processing", level: "progressing", icon: Zap }
+    { name: 'Embedded Systems to Beginner', level: 70, icon: Cpu },
+    { name: 'C/C++', level: 85, icon: Code },
+    { name: 'Java', level: 85, icon: Code },
+    { name: 'Python', level: 80, icon: Code },
+    { name: 'Html/Css', level: 75, icon: Code },
+    { name: 'Arduino/ESP32', level: 'progresseing', icon: Code },
+    { name: 'Circuit Design', level: 'progresseing', icon: Zap },
+    { name: 'MATLAB', level: 'progressing', icon: Code },
+    { name: 'Digital Signal Processing', level: 'progressing', icon: Zap },
   ];
 
   return (
@@ -70,10 +83,8 @@ const Index = () => {
       <nav className="glass-nav fixed top-0 left-0 right-0 z-50 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold gradient-text">
-              Anandha Krishnan P
-            </div>
-            
+            <div className="text-2xl font-bold gradient-text">Anandha Krishnan P</div>
+
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
               {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
@@ -132,16 +143,14 @@ const Index = () => {
 
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 relative z-10">
               Hi, I'm{' '}
-              <span className="gradient-text text-glow animate-float">
-                Anandha Krishnan P
-              </span>
+              <span className="gradient-text text-glow animate-float">Anandha Krishnan P</span>
             </h1>
             <p className="text-xl sm:text-2xl text-gray-200 mb-8 leading-relaxed relative z-10">
               2nd Year Electronics & Communication Engineering Student
             </p>
             <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto relative z-10">
-              Passionate about electronics, embedded systems, and future technologies. 
-              Building innovative solutions that bridge the gap between hardware and software.
+              Passionate about electronics, embedded systems, and future technologies. Building
+              innovative solutions that bridge the gap between hardware and software.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
               <Button
@@ -160,8 +169,8 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-12 animate-bounce">
-            <ChevronDown 
-              size={32} 
+            <ChevronDown
+              size={32}
               className="mx-auto text-white cursor-pointer hover:text-electric-blue transition-colors icon-hover"
               onClick={() => scrollToSection('about')}
             />
@@ -179,14 +188,14 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="relative z-10">
                 <p className="text-gray-200 text-lg leading-relaxed mb-6">
-                  I'm a dedicated Electronics & Communication Engineering student from Tamil Nadu, 
-                  currently in my 2nd year. My passion lies in the fascinating world of electronics, 
+                  I'm a dedicated Electronics & Communication Engineering student from Tamil Nadu,
+                  currently in my 2nd year. My passion lies in the fascinating world of electronics,
                   embedded systems, and emerging technologies.
                 </p>
                 <p className="text-gray-200 text-lg leading-relaxed mb-6">
-                  I believe in learning by doing, which is why I actively work on projects that 
-                  challenge me to apply theoretical knowledge to real-world problems. From IoT 
-                  solutions to digital signal processing, I'm always eager to explore new frontiers 
+                  I believe in learning by doing, which is why I actively work on projects that
+                  challenge me to apply theoretical knowledge to real-world problems. From IoT
+                  solutions to digital signal processing, I'm always eager to explore new frontiers
                   in technology.
                 </p>
                 <div className="flex flex-wrap gap-4">
@@ -265,24 +274,32 @@ const Index = () => {
                   <h3 className="text-xl font-bold text-white group-hover:text-electric-blue transition-colors">
                     {project.title}
                   </h3>
-                  <ExternalLink className="text-gray-400 group-hover:text-electric-teal transition-colors icon-hover" size={20} />
+                  <ExternalLink
+                    className="text-gray-400 group-hover:text-electric-teal transition-colors icon-hover"
+                    size={20}
+                  />
                 </div>
                 <p className="text-gray-300 mb-4 leading-relaxed relative z-10">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4 relative z-10">
                   {project.tech.map((tech) => (
-                    <span key={tech} className="px-3 py-1 bg-glass-medium rounded-full text-sm text-electric-blue border border-electric-blue/30">
+                    <span
+                      key={tech}
+                      className="px-3 py-1 bg-glass-medium rounded-full text-sm text-electric-blue border border-electric-blue/30"
+                    >
                       {tech}
                     </span>
                   ))}
                 </div>
                 <div className="flex justify-between items-center relative z-10">
-                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                    project.status === 'Completed' 
-                      ? 'bg-green-500/20 text-green-400 border border-green-500/30' 
-                      : 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30'
-                  }`}>
+                  <span
+                    className={`px-3 py-1 rounded-full text-sm font-medium ${
+                      project.status === 'Completed'
+                        ? 'bg-green-500/20 text-green-400 border border-green-500/30'
+                        : 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30'
+                    }`}
+                  >
                     {project.status}
                   </span>
                 </div>
@@ -302,21 +319,31 @@ const Index = () => {
             <p className="text-xl text-gray-200 text-center mb-12 relative z-10">
               Let's connect and discuss opportunities in electronics and embedded systems!
             </p>
-            
+
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               <a href="mailto:mysteryak27@gmail.com" className="contact-card p-6 text-center group">
                 <Mail className="mx-auto mb-4 text-electric-blue icon-hover" size={32} />
                 <h3 className="text-lg font-semibold text-white mb-2 relative z-10">Email</h3>
                 <p className="text-gray-300 relative z-10">mysteryak27@gmail.com</p>
               </a>
-              
-              <a href="https://github.com/anandmsak" target="_blank" rel="noopener noreferrer" className="contact-card p-6 text-center group">
+
+              <a
+                href="https://github.com/anandmsak"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-card p-6 text-center group"
+              >
                 <Github className="mx-auto mb-4 text-electric-teal icon-hover" size={32} />
                 <h3 className="text-lg font-semibold text-white mb-2 relative z-10">GitHub</h3>
                 <p className="text-gray-300 relative z-10">@anandhmsak</p>
               </a>
-              
-              <a href="https://www.linkedin.com/in/anandha-krishnan-perumal-msak27s" target="_blank" rel="noopener noreferrer" className="contact-card p-6 text-center group">
+
+              <a
+                href="https://www.linkedin.com/in/anandha-krishnan-perumal-msak27s"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-card p-6 text-center group"
+              >
                 <Linkedin className="mx-auto mb-4 text-electric-purple icon-hover" size={32} />
                 <h3 className="text-lg font-semibold text-white mb-2 relative z-10">LinkedIn</h3>
                 <p className="text-gray-300 relative z-10">Anandha Krishnan</p>
